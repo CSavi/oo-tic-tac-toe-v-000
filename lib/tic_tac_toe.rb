@@ -89,8 +89,8 @@ class TicTacToe
   end 
   
   def winner
-   if won?(board)
-    board[won?(board)[0]]
+   if won?
+    @board[won?(board)[0]]
    end  
   end  
   
