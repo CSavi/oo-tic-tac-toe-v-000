@@ -89,8 +89,7 @@ class TicTacToe
   end 
   
   def winner
-   if won?
-    @board[won?(board)[0]]
+   WIN_COMBINATIONS.detect do 
    end  
   end  
   
