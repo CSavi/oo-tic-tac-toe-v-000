@@ -69,5 +69,12 @@ class TicTacToe
      turn
    end
  end
-  
+ 
+  def won?
+  ex = WIN_COMBINATIONS.detect do |win_group|
+    @board[win_group[0]] == @board[win_group[1]] && @board[win_group[1]] == @board[win_group[2]] && position_taken?(win_group[0]) 
+  end 
+  ex
+end 
+
 end   
