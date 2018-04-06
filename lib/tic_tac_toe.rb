@@ -89,7 +89,14 @@ class TicTacToe
   end 
   
   def winner
-   WIN_COMBINATIONS.detect do 
+   WIN_COMBINATIONS.detect do |win_group|
+     if ((@board[win_group[0]] == "X") || (@board[win_group[1]] == "X") || (@board[win_group[2]] == "X")
+     return "X"
+     elsif ((@board[win_group[0]] == "O") || )
+     
+     
+     
+     
    end  
   end  
   
