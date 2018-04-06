@@ -50,6 +50,15 @@ class TicTacToe
   return counter 
   end 
 
+  def current_player(board)
+    if turn_count(board) % 2 == 0
+      player = "X"
+    else   
+      player = "O"
+    end 
+  # player
+  end
+
   def turn
     puts "Please enter 1-9:"
     input = gets.strip
