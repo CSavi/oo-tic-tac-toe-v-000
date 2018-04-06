@@ -80,4 +80,7 @@ class TicTacToe
    @board.all? {|idx| idx == "X" || idx == "O"}
   end
   
+  def draw?
+   !won? && full?
+  end   
 end   
