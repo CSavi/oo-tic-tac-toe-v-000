@@ -93,4 +93,16 @@ class TicTacToe
       board[won?(board)[0]]
     end  
   end  
+  
+  def play(board)
+  while !over?(board) #&& !won?(board) && !draw?(board)
+  #binding.pry
+    turn(board)
+  end
+  if won?(board)
+    puts "Congratulations #{winner(board)}!"
+  elsif draw?(board)
+    puts "Cat's Game!"
+  end
+end
 end   
