@@ -33,7 +33,7 @@ class TicTacToe
   end   
   
   def position_taken?(board, location)
-    @board[location] == "X" || "O"
+    @board[location] == "X" || @board[location] =="O"
    end      
  
 end   
