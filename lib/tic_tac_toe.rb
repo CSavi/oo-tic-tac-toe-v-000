@@ -36,8 +36,8 @@ class TicTacToe
     @board[location] == "X" || @board[location] == "O"
    end      
  
-  def valid_move?(location)
-  index.between?(0,8) && !position_taken?(location)
+  def valid_move?(index)
+  index.between?(0,8) && !position_taken?(index)
   end
 
 end   
